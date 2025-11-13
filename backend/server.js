@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI, { useNewUrlPa
 
     // Middleware
     app.use(cors({
-      origin: ['https://victor-graphics.vercel.app', 'http://localhost:3000', 'http://localhost:5173'],
+      origin: ['https://victoe-and-sons.vercel.app/', 'http://localhost:3000', 'http://localhost:5173'],
       credentials: true,
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization']
