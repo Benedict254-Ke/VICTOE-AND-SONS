@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://victorgraphics.onrender.com/api';
+const API_BASE_URL = 'https://victoe-and-sons.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
