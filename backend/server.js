@@ -25,24 +25,25 @@ mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI)
 
     // CORS Configuration - must be BEFORE any routes
     const corsOptions = {
-      origin: function (origin, callback) {
-        const allowedOrigins = [
-          'https://victor-and-sons.vercel.app',
-          'http://localhost:3000',
-          'http://localhost:5173'
-        ];
-        // Allow requests with no origin (mobile apps, Postman, etc.)
-        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-          callback(null, true);
-        } else {
-          callback(new Error('Not allowed by CORS'));
-        }
-      },
-      credentials: true,
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      allowedHeaders: ['Content-Type', 'Authorization'],
-      optionsSuccessStatus: 200
-    };
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      'https://victor-and-sons.vercel.app', // FIXED SPELLING
+      'http://localhost:3000',
+      'http://localhost:5173'
+    ];
+
+    // Allow Postman and mobile apps
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS: ' + origin));
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  optionsSuccessStatus: 200
+};
 
     app.use(cors(corsOptions));
     app.use(express.json());
