@@ -58,10 +58,10 @@ export default function About() {
                 Building Success Through Technology
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                VICTOR AND SONS COMPUTERS AND TECH SOLUTIONS KENYA has been serving the Nairobi community for over 6 years, providing comprehensive technology solutions, government service assistance, and professional training programs.
+                VICTOR AND SONS COMPUTERS AND TECH SOLUTIONS KENYA has been serving the Kisumu community for over 6 years, providing comprehensive technology solutions, government service assistance, and professional training programs.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                Located in the heart of Nairobi CBD, we've become the go-to destination for individuals and businesses seeking reliable, professional, and efficient services.
+                Located in the heart of Kisumu, we've become the go-to destination for individuals and businesses seeking reliable, professional, and efficient services.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Our team of experienced professionals is committed to delivering excellence in every interaction, ensuring that your needs are met with precision and care.

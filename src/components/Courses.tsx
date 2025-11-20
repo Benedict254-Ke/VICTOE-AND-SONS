@@ -169,7 +169,7 @@ export default function Courses() {
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-white">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold mb-2">1500+</div>
+                <div className="text-4xl font-bold mb-2">500+</div>
                 <div className="text-gray-300">Students Trained</div>
               </div>
               <div>
