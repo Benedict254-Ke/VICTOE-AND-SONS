@@ -70,11 +70,11 @@ export default function About() {
 
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="bg-blue-50 rounded-lg p-4">
-                <div className="text-3xl font-bold text-blue-600 mb-1">1000+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">70,000+</div>
                 <div className="text-gray-700 font-medium">Happy Clients</div>
               </div>
               <div className="bg-green-50 rounded-lg p-4">
-                <div className="text-3xl font-bold text-green-600 mb-1">5000+</div>
+                <div className="text-3xl font-bold text-green-600 mb-1">120,000+</div>
                 <div className="text-gray-700 font-medium">Services Delivered</div>
               </div>
             </div>
